@@ -1,6 +1,6 @@
-# 🤖 BeepJokerBot – Your AI-Powered Telegram Joke Bot
+# 🤖 BeepJoker – Your AI-Powered Telegram Joke Bot
 
-**BeepJokerBot** is a fun, AI-powered Telegram bot that delivers a single hilarious joke (with emojis!) based on any topic you mention. Just tag the bot in a message like `@BeepJokerBot cats`, and it’ll do the rest.
+**BeepJoker** is a fun, AI-powered Telegram bot that delivers a single hilarious joke (with emojis!) based on any topic you mention. Just tag the bot in a message like `@BeepJoker cats`, and it’ll do the rest.
 
 Built with:
 
@@ -13,7 +13,7 @@ Built with:
 
 ## 🎬 Demo
 
-![BeepJokerBot Demo](demo.gif)
+![BeepJoker Demo](demo.gif)
 
 ---
 
@@ -72,7 +72,7 @@ LANGCHAIN_PROJECT=your_langchain_project
 
 ## 🛠 How It Works
 
-* Listens for messages mentioning `@BeepJokerBot`.
+* Listens for messages mentioning `@BeepJoker`.
 * Extracts the topic from the message using regex.
 * Sends the topic to a LangChain pipeline.
 * Returns a funny, emoji-rich joke to the user.
