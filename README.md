@@ -1,59 +1,111 @@
-# 🤖 BeepJokerBot — AI-Powered Joke Generator for Telegram
+# 🤖 BeepJokerBot – Your AI-Powered Telegram Joke Bot
 
-BeepJokerBot is a Telegram chatbot that uses LLMs to generate a **funny, emoji-filled joke** on any topic you provide! Built with Python, LangChain, and the GROQ API, it listens for mentions in Telegram chats and instantly responds with humor based on the specified topic.
+**BeepJokerBot** is a fun, AI-powered Telegram bot that delivers a single hilarious joke (with emojis!) based on any topic you mention. Just tag the bot in a message like `@BeepJokerBot cats`, and it’ll do the rest.
 
----
+Built with:
 
-## 🚀 Features
-
-- 🤖 Built with **LangChain** and **GROQ’s Gemma2-9b-It** model
-- 💬 Generates **one-liner jokes** with emojis on any user-specified topic
-- 📱 Operates in Telegram groups or direct chats via mentions
-- 🛠️ Uses environment variables and a clean, modular design
+* 🧠 [LangChain](https://www.langchain.com/)
+* ⚡ [Groq API](https://groq.com/)
+* 🤖 [Gemma2-9b-It](https://www.groq.com/models)
+* 💬 Telegram Bot API
 
 ---
 
-## 📸 Demo
+## 🎬 Demo
 
-> **Example Usage:**
-> 
-> Mention the bot in a chat like:
-> 
-> ```
-> @BeepJokerBot technology
-> ```
-> 
-> **Response:**
-> 
-> ```
-> Why did the computer go to therapy? 🖥️💬 Because it had too many bytes of emotional baggage! 😅
-> ```
+![BeepJokerBot Demo](demo.gif)
 
 ---
 
-## 🧠 How It Works
+## ✨ Features
 
-1. **User Interaction:** The user mentions the bot with a specific topic (e.g., `@BeepJokerBot cats`).
-2. **Topic Extraction:** The bot extracts the specified topic from the message.
-3. **Joke Generation:** The topic is fed through a LangChain pipeline that communicates with the GROQ LLM.
-4. **Response:** The generated joke is returned and sent to the user in real-time.
-
----
-
-## 🛠️ Tech Stack
-
-- **Python**
-- **Telegram Bot API** via `python-telegram-bot`
-- **LangChain** for prompt engineering and chaining
-- **GROQ API** using the `Gemma2-9b-It` LLM
-- **dotenv** for environment variable management
+* 🎯 Mention-based joke generation
+* 🧠 Uses large language model (`Gemma2-9b-It`) for creativity
+* 😂 Returns a *single* funny joke per request
+* 🤖 Deployed with `python-telegram-bot`
+* 💡 Great for groups or personal entertainment
 
 ---
 
-## 🧪 Setup Instructions
+## 🚀 Getting Started
 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/abdullahakintobi/telegram-jokes-bot/
-cd beep-joker-bot
+git clone https://github.com/abdullahakintobi/beepjoker.git
+cd beepjoker
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+TELEGRAM_API_KEY=your_telegram_bot_token
+GROQ_API_KEY=your_groq_api_key
+LANGCHAIN_API_KEY=your_langchain_api_key
+LANGCHAIN_PROJECT=your_langchain_project
+```
+
+---
+
+## 📂 Repository Structure
+
+```
+.
+├── LICENSE              # License file
+├── Procfile             # For deployment (e.g., Heroku)
+├── README.md            # This file
+├── bot.py               # Main bot logic
+├── demo.gif             # Demo of bot interaction
+├── requirements.txt     # Python dependencies
+└── .env                 # Not committed – your API secrets
+```
+
+---
+
+## 🛠 How It Works
+
+* Listens for messages mentioning `@BeepJokerBot`.
+* Extracts the topic from the message using regex.
+* Sends the topic to a LangChain pipeline.
+* Returns a funny, emoji-rich joke to the user.
+
+---
+
+## ⚙️ Running the Bot Locally
+
+```bash
+python bot.py
+```
+
+Or deploy it to platforms like **Heroku** using the included `Procfile`.
+
+---
+
+## 🧩 Technologies Used
+
+* Python
+* Telegram Bot API
+* LangChain
+* Groq (Gemma2-9b-It)
+* python-telegram-bot
+* dotenv
+
+---
+
+## 📄 License
+
+This project is licensed under the [Apache-2.0 license](LICENSE).
+
+---
+
+## 💬 Contact & Contributions
+
+Found a bug or want to suggest a feature? Open an issue or create a pull request.
