@@ -1,4 +1,4 @@
-# 🤖 BeepJoker – Your AI-Powered Telegram Joke Bot
+# 🤖 BeepJoker – AI-Powered Telegram Joke Bot
 
 **BeepJoker** is a fun, AI-powered Telegram bot that delivers a single hilarious joke (with emojis!) based on any topic you mention. Just tag the bot in a message like `@BeepJoker cats`, and it’ll do the rest.
 
